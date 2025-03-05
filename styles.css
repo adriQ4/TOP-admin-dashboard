@@ -1,0 +1,121 @@
+:root {
+  /*! font--sizes */
+  --font-small: 0.875rem; /* 14px */
+  --font-base: 1rem; /* 16px */
+  --font-medium: 1.25rem; /* 20px */
+  --font-large: 1.5rem; /* 24px */
+  --font-xlarge: clamp(2rem, 5vw, 3rem); /* 32px máx, escalable */
+
+  /*?&&&& colors &&&& */
+  --blue-marine: #0b3c49;
+  --white: #fffdfd;
+  --grey: #cbd2d0;
+  --purple: #731963;
+  --yellow: #f0e100;
+}
+
+h1 {
+  font-size: var(--font-xlarge);
+}
+
+h2 {
+  font-size: var(--font-large);
+}
+
+p {
+  font-size: var(--font-medium);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  grid-template-rows: 15vh 1fr;
+  font-size: var(--font-base);
+}
+
+.hdr {
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0 0 10px 50px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.hdr--section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #fffdfd;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.search--icon {
+  margin-right: 20px;
+}
+
+.search--bar {
+  background-color: #cbd2d0;
+  border: none;
+  width: 600px;
+  height: 1.8rem;
+  border-radius: 15px;
+  margin-right: 100px;
+}
+
+.bell--icon {
+  margin-right: 30px;
+}
+.hdr--duck {
+  margin-right: 30px;
+}
+
+.hdr--name {
+  font-weight: bold;
+}
+
+.hdr--section2 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.sect2--name {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 18px;
+  align-items: flex-start;
+}
+
+.sect2--name .prf--sect2 {
+  font-size: var(--font-base);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.sect2--name .h1--sect2 {
+  font-size: var(--font-large);
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.btns {
+  border: none;
+  color: var(--white);
+  background-color: var(--blue-marine);
+  border-radius: 20px;
+  padding: 5px 10px;
+}
