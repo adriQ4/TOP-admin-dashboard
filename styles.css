@@ -42,6 +42,8 @@ body {
   font-size: var(--font-base);
 }
 
+/* ##############  HEADER ############## */
+
 .hdr {
   grid-area: 1 / 2 / 2 / 3;
   display: grid;
@@ -68,7 +70,7 @@ body {
 .search--bar {
   background-color: #cbd2d0;
   border: none;
-  width: 600px;
+  width: 630px;
   height: 1.8rem;
   border-radius: 15px;
   margin-right: 100px;
@@ -112,10 +114,21 @@ body {
   font-weight: 700;
 }
 
+.btns--box {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 350px;
+  gap: 25px;
+}
+
 .btns {
   border: none;
+  font-size: var(--font-base);
+  font-weight: 600;
+  line-height: 1.5;
   color: var(--white);
   background-color: var(--blue-marine);
-  border-radius: 20px;
-  padding: 5px 10px;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
 }
