@@ -167,7 +167,7 @@ ul li a,
 ul li a:visited {
   color: var(--white);
   text-decoration: none;
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   font-weight: 500;
   line-height: 1.5;
 }
@@ -193,4 +193,32 @@ ul li a:visited {
 .settings--menu li a,
 .home--menu li a {
   margin-left: 20px;
+}
+
+/* ##############  MAIN  ############## */
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1.5rem 1fr 1.5rem 1fr;
+  background-color: var(--grey);
+  gap: 25px;
+}
+
+.project--h2 {
+  grid-area: 1 / 1 / 2 / 2;
+  font-size: var(--font-large);
+  font-weight: 600;
+}
+
+.announ--h2 {
+  /* grid-area: 1 / 1 / 2 / 2; */
+  font-size: var(--font-large);
+  font-weight: 600;
+}
+
+.projects--box {
+  grid-area: 2 / 1 / 4 / 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
